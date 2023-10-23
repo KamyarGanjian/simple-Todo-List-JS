@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Todo-App</title>
+
+    <link href="style/jquery-ui.css">
+    <link rel="stylesheet" href="./style/style.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./style/persian-datepicker.min.css">
+
+    <script src="./script/jquery-3.6.1.min.js" defer></script>
+    <script src="./script/jquery-ui.js" defer></script>
+    <script src="./script/persian-date.min.js" defer></script>
+    <script src="./script/persian-datepicker.min.js" defer></script>
+    <script src="./script/todo.js" defer></script>
+</head>
+
+<body>
+    <div class="board">
+
+
+        <div class="lanes">
+            <div class="swim-lane">
+                <form id="todo-form">
+                    <input type="text" placeholder="New Todo..." id="todo-input" />
+                    <textarea class="info1" placeholder="info..."></textarea>
+                    <input type="text" id="calendar1">
+                    <button type="submit">Add +</button>
+                </form>
+            </div>
+            <div class="swim-lane" id="highp-lane">
+                <h3 class="header">High Priority Tasks</h3>
+                <div class="highp-div"></div>
+            </div>
+            <div class="swim-lane" id="lowp-lane">
+                <h3 class="header">Low Priority Tasks</h3>
+                <div class="lowp-div"></div>
+            </div>
+        </div>
+
+        <!--modal-->
+
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <form id="modal-form">
+                    <div class="Container">
+                        <span class="close">&times;</span>
+                        <div id="taskName"></div>
+                        <textarea class="info" id="info"></textarea>
+                        <input type="text" id="calendar">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
